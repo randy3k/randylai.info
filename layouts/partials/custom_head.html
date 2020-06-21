@@ -1,7 +1,7 @@
-{{ if .Params.css }}
-<link rel="stylesheet" href="{{ .Params.css }}">
+{{ range .Params.css }}
+<link rel="stylesheet" href="{{ . }}">
 {{ end }}
 
-{{ if .Params.js }}
-<script type="text/javascript" src="{{ .Params.js }}"></script>
+{{ range .Params.js }}
+<script type="text/javascript" src="{{ . }}"></script>
 {{ end }}

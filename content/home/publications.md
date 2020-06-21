@@ -5,28 +5,38 @@ weight = 90  # Order that this section will appear.
 
 title = "Publications"
 subtitle = ""
-
-[design]
-  columns = "1"
 +++
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
 
 <bibtex src="pub.bib"></bibtex>
 
-<div class="bibtex_display", year="[0-9+]">
+<div class="bibtex_display", year="[0-9+]"></div>
 <div class="bibtex_template", style="display: none">
-  <div class="if author" style="font-weight: bold;">
-    <span class="if year">
-      <span class="year"></span>, 
-    </span>
+  <div style="font-weight: bold;">
     <span class="author"></span>
+    <span class="if year">
+      (<span class="year"></span>),&nbsp
+    </span>
   </div>
   <div style="margin-left: 10px; margin-bottom:5px;">
-    <span class="title"></span>,
-    <span class="if journal">
-    <i><span class="journal"></span></i>
+  <a class="url"><span class="title"></span></a>,&nbsp
+  <span class="if journal">
+    <span class="if !(volume || pages)">
+      <span class="journal" style="font-style: italic;"></span>.
+    </span>
+    <span class="if volume || pages">
+      <span class="journal" style="font-style: italic;"></span>,
+    </span>
+  </span>
+  <span class="if volume">
+    <span class="if !pages">
+      <span class="volume"></span>.
+    </span>
+    <span class="if pages">
+      <span class="volume"></span>,
+    </span>
+  </span>
+  <span class="if pages">
+    <span class="pages"></span>.
   </span>
   </div>
-</div>
 </div>
