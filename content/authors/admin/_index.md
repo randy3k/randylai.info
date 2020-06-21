@@ -15,9 +15,8 @@ education:
     year: 2008
 email: ""
 interests:
+- R, Python and Julia Software Development
 - BFF (Bayesian, Fiducial and Frequentist)
-- R Enthusiast
-- Software Development
 organizations:
 - name: Univerisity of California, Davis
   url: ""

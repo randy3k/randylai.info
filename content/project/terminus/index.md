@@ -1,5 +1,6 @@
 ---
 title: Terminus
+badge: "https://img.shields.io/github/stars/randy3k/Terminus.svg?style=social&label=Star"
 date: ""
 image:
   caption: Terminus screenshot

@@ -1,5 +1,6 @@
 ---
 title: languageserver
+badge: "https://img.shields.io/github/stars/REditorSupport/languageserver.svg?style=social&label=Star"
 date: ""
 image:
   caption: REditorSupport logo

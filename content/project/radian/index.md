@@ -1,5 +1,6 @@
 ---
 title: radian
+badge: "https://img.shields.io/github/stars/randy3k/radian.svg?style=social&label=Star"
 date: ""
 image:
   caption: radian screenshot
