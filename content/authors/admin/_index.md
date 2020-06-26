@@ -28,9 +28,11 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/randy3k
+- icon: linkedin
+  icon_pack: fab
+  link: 'https://www.linkedin.com/in/randy-cs-lai'
 superuser: true
 title: Randy Lai
 ---
 
-Randy Lai is a visiting professor in Statistics at the University of California, Davis. His research interests include R software developement, machine learning algorithms and non-frequentist inference procedures.
-
+Randy Lai is a visiting professor in statistics at the University of California, Davis. His interests include R software developement, machine learning algorithms and non-frequentist inference procedures.

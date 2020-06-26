@@ -2,6 +2,7 @@
 title: Terminus
 badge: "https://img.shields.io/github/stars/randy3k/Terminus.svg?style=social&label=Star"
 date: ""
+order: 2
 image:
   caption: Terminus screenshot
   focal_point: Smart

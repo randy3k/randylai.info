@@ -26,11 +26,15 @@
     </a>
     {{ end }}
     <div class="card-text">
-      <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
-      {{ if $item.Params.badge }}
-          <img src="{{ $item.Params.badge }}"></img>
-      {{ end }}
+      <div>
+      <h4>
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}
+          {{ if $item.Params.badge }}
+              <img src="{{ $item.Params.badge }}"></img>
+          {{ end }}
+        </a>
       </h4>
+      </div>
       {{ with $summary }}
       <div class="article-style">
         <p>{{ . }}</p>
