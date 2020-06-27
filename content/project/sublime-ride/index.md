@@ -4,7 +4,7 @@ badge: "https://img.shields.io/github/stars/REditorSupport/sublime-ide-r.svg?sty
 date: ""
 order: 4
 external_link: https://github.com/REditorSupport/sublime-ide-r
-summary: Terminus is an Sublime Text package which emulates terminals inside the editor.
+summary: A Sublime Text package for better R programming experience.
 tags:
 - Sublime Text
 - Python
