@@ -16,6 +16,7 @@ education:
 email: ""
 interests:
 - R, Python and Julia Software Development
+- Teaching Data Science
 - BFF (Bayesian, Fiducial and Frequentist)
 organizations:
 - name: Univerisity of California, Davis
