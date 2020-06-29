@@ -41,6 +41,9 @@ subtitle = "Sole/primary developer"
     name = "Sublime Text"
     tag = "Sublime Text"
 
+  [[content.filter_button]]
+    name = "Misc"
+    tag = "Misc"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
