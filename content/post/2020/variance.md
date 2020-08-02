@@ -123,7 +123,8 @@ $$
 MSE(\hat \sigma^2) = \frac{(n-1)\sigma^4}{n^3} \left[(n-1) \kappa - n + 3 \right] + \left[\frac{-\sigma^2}{n}\right]^2 =  \sigma^4\left[ \frac{(n-1)^2}{n^3} \kappa - \frac{n^2-5n + 3}{n^3}\right].
 $$
 
-Some algebra shows that $MSE(\hat \sigma^2) < MSE(S^2)$ for all $n$ when $\kappa > 1.5$ and all common distributions have kurtosises greater than 1.5.
+Some algebra shows that $MSE(\hat \sigma^2) < MSE(S^2)$ for all $n$ when $\kappa > 1.5$. Most common distributions have kurtosises greater than 1.5. A noticeable exception is the Bernoulli distribution with $1/3<p<2/3$. Nevertheless, in practice, we don't directly estimate the variance of the Bernoulli distribution but to estimate $p$ directly.
+
 
 
 ### Conclusion
