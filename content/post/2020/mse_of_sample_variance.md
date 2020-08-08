@@ -17,7 +17,7 @@ $$
 \hat \sigma^2 = \frac{\sum(X_i - \bar X)^2}{n}.
 $$
 
-The common argument is that $S^2$ is unbiased whereas $\hat \sigma^2$ is biased for estimating $\sigma^2$. While it is true, this statement is over-stressed. A more statistical way to evaluate performance of estimators is to compare the mean squared error (MSE) of the estimators. 
+The common argument is that $S^2$ is unbiased whereas $\hat \sigma^2$ is biased for estimating $\sigma^2$. While it is true, this statement is a bit over-stressed. A more statistical way to evaluate performance of estimators is to compare the mean squared error (MSE) of the estimators. 
 
 ### Normal Population
 
@@ -129,4 +129,4 @@ Some algebra shows that $MSE(\hat \sigma^2) < MSE(S^2)$ for all $n$ when $\kappa
 
 ### Conclusion
 
-Unbiasedness shall not be used as the prime reason to use sample variance.
+There are really not much reasons to use sample variance.
