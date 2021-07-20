@@ -73,7 +73,7 @@ $$
 \begin{align}
 E \left[ (\sum Z_i^2) (\sum Z_i)^2\right] &= E \left[ (\sum Z_i^2) (\sum Z_i^2 + \sum_{i\ne j} Z_i Z
 _j)\right] \\
-&=E \left[\sum Z_i^4 + \sum_{i\ne j} Z_i^2 Z_j^2 + \sum_k \sum_{i\ne j} Z_k Z_i Z_j \right] \\
+&=E \left[\sum Z_i^4 + \sum_{i\ne j} Z_i^2 Z_j^2 + \sum_k \sum_{i\ne j} Z_k^2 Z_i Z_j \right] \\
 &= n \kappa \sigma^4 + n(n-1) \sigma^4.
 \end{align}
 $$
