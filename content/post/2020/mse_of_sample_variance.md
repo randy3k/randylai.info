@@ -1,5 +1,5 @@
 ---
-title: Why unbaised estimator?
+title: MSE of Sample Variance
 date: 2020-08-01
 categories: Statistics
 tags: 

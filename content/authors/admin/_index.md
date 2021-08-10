@@ -19,9 +19,9 @@ interests:
 - Teaching Data Science
 - BFF (Bayesian, Fiducial and Frequentist)
 organizations:
-- name: Univerisity of California, Davis
+- name: Google
   url: ""
-role: Visiting Professor in Statistics
+role: Data Scientist
 social:
 - icon: envelope
   icon_pack: fas
@@ -36,4 +36,4 @@ superuser: true
 title: Randy Lai
 ---
 
-Randy Lai is a visiting professor in statistics at the University of California, Davis. His interests include R software developement, machine learning algorithms and non-frequentist inference procedures.
+Randy Lai is a data scentist at Google. His interests include R software developement, machine learning algorithms and non-frequentist inference procedures.
