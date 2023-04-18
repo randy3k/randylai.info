@@ -45,7 +45,7 @@ sections:
       description: >
         Teach upper division data science courses, e.g.<br>
         Data & Web Technologies for Data Analysis<br>
-        Big Data & High Performance Statistical Computing<br>
+        Big Data & High Performance Statistical Computing
     - title: Assistant Professor in Statistics
       company: University of Maine
       company_url: ""
