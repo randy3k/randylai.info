@@ -17,7 +17,7 @@ sections:
     - description:
       icon: python
       icon_pack: fab
-      name: Python      
+      name: Python
     - description:
       icon: chart-line
       icon_pack: fas
@@ -25,17 +25,17 @@ sections:
     title: Skills
 - block: experience
   content:
-    title: Experience    
+    title: Experience
     date_format: Jan 2006
     items:
     - title: Data Scientist
       company: Google
       company_url: ""
-      location: 
+      location:
       date_start: "2021-03-01"
       date_end: ""
       description: >
-        DS for Google Payments     
+        DS for Google Payments
     - title: Visiting Assistant Professor in Statistics
       company: University of California, Davis
       company_url: ""
@@ -90,6 +90,8 @@ sections:
       tag: R
     - name: Python
       tag: Python
+    - name: Sublime Text
+      tag: Sublime Text
     default_button_index: 0
     filters:
       folders:
