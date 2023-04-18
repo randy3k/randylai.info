@@ -2,7 +2,7 @@
 title: R language server
 badge: "https://img.shields.io/github/stars/REditorSupport/languageserver.svg?style=social&label=Star"
 date: ""
-order: 3
+weight: 8
 image:
   caption: REditorSupport logo
   focal_point: Smart

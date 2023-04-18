@@ -2,7 +2,7 @@
 title: otp
 badge: "https://img.shields.io/github/stars/randy3k/otp.svg?style=social&label=Star"
 date: ""
-order: 10
+weight: 1
 image:
   caption: otp screenshot
   focal_point: Smart

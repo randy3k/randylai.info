@@ -2,7 +2,7 @@
 title: collections
 badge: "https://img.shields.io/github/stars/randy3k/collections.svg?style=social&label=Star"
 date: ""
-order: 10
+weight: 1
 image:
   caption: collections screenshot
   focal_point: Smart
