@@ -2,7 +2,7 @@
 title: radian
 badge: "https://img.shields.io/github/stars/randy3k/radian.svg?style=social&label=Star"
 date: ""
-order: 1
+weight: 10
 image:
   caption: radian screenshot
   focal_point: Smart
