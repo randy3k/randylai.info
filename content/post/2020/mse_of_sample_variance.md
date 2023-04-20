@@ -1,5 +1,5 @@
 ---
-title: MSE of Sample Variance
+title: MSE of sample variance
 date: 2020-08-01
 categories: Statistics
 tags: 
