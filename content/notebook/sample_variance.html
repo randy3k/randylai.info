@@ -14808,8 +14808,8 @@ $$
 \begin{align*}
 E(V_n^k) &amp;= E\left[\left( \frac{1}{n-1}\sum_{i=1}^n (X_i-\bar X)^2 \right)^k\right] \\
 &amp; =E\left[\left( \frac{1}{n-1} \left( \sum_{i=1}^n  (X_i-\mu)^2 - \sum_{i=1}^n(\bar X - \mu)^2 \right) \right)^k\right] \\
-&amp;= \left( \frac{1}{n-1} \right)^k \sum_{r=0}^k (-1)^{k-r} E\left[\left(\sum_{i=1}^n (X_i-\mu)^2\right)^r \left(\sum_{i=1}^n (\bar X -\mu)^2\right)^{k-r} \right] \\
-&amp;= \left( \frac{1}{n-1} \right)^k \sum_{r=0}^k (-1)^{k-r} n^{r-k} E\left[\left(\sum_{i=1}^n (X_i-\mu)^2\right)^r \left(\sum_{i=1}^n (X_i-\mu)\right)^{2(k-r)} \right]
+&amp;= \left( \frac{1}{n-1} \right)^k \sum_{r=0}^k \binom{n}{r} (-1)^{k-r} E\left[\left(\sum_{i=1}^n (X_i-\mu)^2\right)^r \left(\sum_{i=1}^n (\bar X -\mu)^2\right)^{k-r} \right] \\
+&amp;= \left( \frac{1}{n-1} \right)^k \sum_{r=0}^k \binom{n}{r} (-1)^{k-r} n^{r-k} E\left[\left(\sum_{i=1}^n (X_i-\mu)^2\right)^r \left(\sum_{i=1}^n (X_i-\mu)\right)^{2(k-r)} \right]
 \end{align*}
 $$
 </div>
