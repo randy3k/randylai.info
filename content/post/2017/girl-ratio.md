@@ -5,7 +5,6 @@ categories: Statistics
 tags: 
     - Statistics
     - Probability
-math: true
 ---
 
 [https://stats.stackexchange.com/questions/93830/expected-number-of-ratio-of-girls-vs-boys-birth]()

@@ -5,7 +5,6 @@ categories: Statistics
 tags: 
     - Statistics
     - Probability
-math: true
 ---
 
 
@@ -43,11 +42,11 @@ Similar calculation could be done for $\hat \sigma_n = \sqrt{\frac{\sum(X_i - \b
 
 <span>
 $$
-\begin{align}
+\begin{align*}
 MSE(\hat \sigma_n) & = E\left[ \sqrt{\frac{n-1}{n}} S_n - \sigma \right]^2 = 
 E\left[\left(1 - \frac{1}{2n} + o(n^{-1})\right) S_n - \sigma\right]^2 \\
 &= \frac{\sigma^2}{4}\left( \frac{\kappa - 1}{n}\right) + o(n^{-1}).
-\end{align}
+\end{align*}
 $$
 </span>
 

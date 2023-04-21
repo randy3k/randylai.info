@@ -5,7 +5,6 @@ categories: Statistics
 tags: 
     - Statistics
     - Probability
-math: true
 ---
 
 In introductory statistics courses, we often focus on unbiased estimators such as the sample variance,
@@ -50,11 +49,11 @@ Let $Z_i = X_i - \mu$, $\mu = E(X_i)$, $\sigma^2 = Var(X_i)$ and the kurtosis $\
 
 <span>
 $$
-\begin{align}
+\begin{align*}
 E\left[\left(\sum(X_i - \bar X)^2\right)^2\right] &= E\left[\left( \sum (X_i-\mu)^2 - n (\bar X - \mu)^2 \right)^2\right] \\
 &= E\left[\left( \sum Z_i^2 - n (\bar Z)^2 \right)^2\right] \\
 &= E\left[(\sum Z_i^2)^2\right] - \frac{2}{n} E \left[ (\sum Z_i^2) (\sum Z_i)^2\right] + \frac{1}{n^2} E\left[(\sum Z_i)^4 \right].
-\end{align}
+\end{align*}
 $$
 </span>
 
@@ -70,12 +69,12 @@ The second term,
 
 <span>
 $$
-\begin{align}
+\begin{align*}
 E \left[ (\sum Z_i^2) (\sum Z_i)^2\right] &= E \left[ (\sum Z_i^2) (\sum Z_i^2 + \sum_{i\ne j} Z_i Z
 _j)\right] \\
 &=E \left[\sum Z_i^4 + \sum_{i\ne j} Z_i^2 Z_j^2 + \sum_k \sum_{i\ne j} Z_k^2 Z_i Z_j \right] \\
 &= n \kappa \sigma^4 + n(n-1) \sigma^4.
-\end{align}
+\end{align*}
 $$
 </span>
 
@@ -83,11 +82,11 @@ The third term,
 
 <span>
 $$
-\begin{align}
+\begin{align*}
 E\left[(\sum Z_i)^4 \right] &= E[\sum Z_i^4 + 4 \sum_{i \ne j} Z_i^3 Z_j + 3 \sum_{i \ne j} Z_i^2 Z_j^2 + 6 \sum_{i \ne j \ne k} Z_i^2 Z_j Z_k +  \sum_{i \ne j \ne k \ne l} Z_i Z_j Z_k Z_l ] \\
 &= E[\sum Z_i^4 + 3 \sum_{i \ne j} Z_i^2 Z_j^2] \\
 &= n \kappa \sigma^4 + 3n(n-1) \sigma^4.
-\end{align}
+\end{align*}
 $$
 </span>
 
@@ -96,19 +95,19 @@ Therefore,
 
 <span>
 $$
-\begin{align}
+\begin{align*}
 E\left[\left(\sum(X_i - \bar X)^2\right)^2\right] &= \frac{\sigma^4}{n} \left[(n^2 - 2n + 1) \kappa + n^2(n-1) - 2 n(n-1) + 3(n-1) \right] \\
 &= \frac{(n-1)\sigma^4}{n} \left[(n-1) \kappa + n^2 - 2n + 3)\right]
-\end{align}
+\end{align*}
 $$
 </span>
 and
 <span>
 $$
-\begin{align}
+\begin{align*}
 Var\left[\left(\sum(X_i - \bar X)^2\right)^2\right] &=  \frac{(n-1)\sigma^4}{n} \left[(n-1) \kappa + n^2 - 2n + 3)\right] - (n-1)^2 \sigma^4 \\
 &= \frac{(n-1)\sigma^4}{n} \left[(n-1) \kappa - n + 3 \right].
-\end{align}
+\end{align*}
 $$
 </span>
 

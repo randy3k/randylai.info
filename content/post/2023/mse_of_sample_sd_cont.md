@@ -5,7 +5,6 @@ categories: Statistics
 tags: 
     - Statistics
     - Probability
-math: true
 ---
 
 
