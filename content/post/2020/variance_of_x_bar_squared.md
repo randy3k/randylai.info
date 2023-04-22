@@ -13,18 +13,18 @@ Before we start working on $Var(\bar X^2)$, let's recall that $\bar X$ is an unb
 
 Let $Z_i = X_i - \mu$, 
 
-<span>
+{{< math >}}
 $$
 \begin{align*}
 E\left[(\sum X_i)^4\right] &= E\left[(n \mu + \sum Z_i)^4\right]\\
 &= E\left[[n^4 \mu^4 + 4 n^3 \mu^3 \sum Z_i+ 6 n^2 \mu^2 (\sum Z_i)^2 + 4 n \mu (\sum Z_i)^3  + (\sum Z_i)^4 \right].
 \end{align*}
 $$
-</span>
+{{< /math >}}
 
 By the fact that,
 
-<span>
+{{< math >}}
 $$
 \begin{align*}
 E\left[\sum Z_i\right] &= 0\\
@@ -35,10 +35,10 @@ E\left[(\sum Z_i)^4 \right] &= E[\sum Z_i^4 + 4 \sum_{i \ne j} Z_i^3 Z_j + 3 \su
 &= n \kappa \sigma^4 + 3n(n-1) \sigma^4.
 \end{align*}
 $$
-</span>
+{{< /math >}}
 
 We have,
-<span>
+{{< math >}}
 $$
 E\left[(\sum X_i)^4\right] = n^4 \mu^4 + 6n^3 \sigma^2 \mu^2 + 4n^2 \gamma \sigma^2 \mu + n(3n + \kappa - 3) \sigma^4.
 $$
@@ -46,4 +46,4 @@ $$
 $$
 Var[\bar X^2] = \frac{E[(\sum X_i)^4]}{n^4} - [E(\bar X^2)]^2 = \frac{4}{n} \sigma^2 \mu^2 + \frac{4\gamma}{n^2} \sigma^3 \mu + \frac{(2n+\kappa-3)}{n^3} \sigma^4.
 $$
-</span>
+{{< /math >}}

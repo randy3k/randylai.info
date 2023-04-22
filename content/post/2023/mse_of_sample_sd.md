@@ -40,7 +40,7 @@ Therefore, $MSE(S_n) = \frac{\sigma^2}{4}\left( \frac{\kappa - 1}{n}\right) + o(
 
 Similar calculation could be done for $\hat \sigma_n = \sqrt{\frac{\sum(X_i - \bar X)^2}{n}}$,
 
-<span>
+{{< math >}}
 $$
 \begin{align*}
 MSE(\hat \sigma_n) & = E\left[ \sqrt{\frac{n-1}{n}} S_n - \sigma \right]^2 = 
@@ -48,7 +48,7 @@ E\left[\left(1 - \frac{1}{2n} + o(n^{-1})\right) S_n - \sigma\right]^2 \\
 &= \frac{\sigma^2}{4}\left( \frac{\kappa - 1}{n}\right) + o(n^{-1}).
 \end{align*}
 $$
-</span>
+{{< /math >}}
 
 Unfortunately, MSE of $S_n$ and $\hat \sigma_n$ match at the first order. We will need to consider higher order expansion next time.
 
