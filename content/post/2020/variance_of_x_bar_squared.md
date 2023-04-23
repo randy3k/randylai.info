@@ -7,7 +7,7 @@ tags:
     - Probability
 ---
 
-It is well known that $\bar X^2$ is a biased estimator for $\mu^2$, but a little is known to its variance.
+It is well known that $\bar X^2$ is a biased estimator for $\mu^2$, but how about its variance?
 
 Before we start working on $Var(\bar X^2)$, let's recall that $\bar X$ is an unbiased estimator for $\mu$, i.e. $E(\bar X) = \mu$. Moreover, $Var(\bar X) = \sigma^2/n$ and $E(\bar X^2) = Var(\bar X) + E(\bar X)^2 = \frac{\sigma^2}{n} + \mu^2$.
 

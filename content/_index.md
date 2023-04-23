@@ -43,7 +43,7 @@ sections:
       date_start: "2019-09-01"
       date_end: "2021-03-01"
       description: >
-        Teach upper division data science courses<br>
+        Taught upper division data science courses<br>
         - Data & Web Technologies for Data Analysis<br>
         - Big Data & High Performance Statistical Computing
     - title: Assistant Professor in Statistics
