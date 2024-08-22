@@ -6,7 +6,7 @@ role: Data Scientist
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:randy.cs.lai@gmail.com'
+  link: 'mailto:hello@randylai.info'
 - icon: github
   icon_pack: fab
   link: https://github.com/randy3k
