@@ -26,6 +26,7 @@ $$
 
 **Theorem** [`textbook_certificate`]. As $n \to \infty$,
 
+{{< math >}}
 $$
 \begin{aligned}
 E(S_n) &= \sigma - \frac{\sigma}{8n}(\lambda_4 - 1) + \frac{\sigma}{128 n^2}\left(8\lambda_6 - 15\lambda_4^2 + 6\lambda_4 - 48\lambda_3^2 - 31\right) + o(n^{-2}),\\
@@ -34,6 +35,7 @@ MSE(S_n) &= \frac{\sigma^2}{4n}(\lambda_4 - 1) + \frac{\sigma^2}{64 n^2}\left(48
 MSE(\hat\sigma_n) &= \frac{\sigma^2}{4n}(\lambda_4 - 1) + \frac{\sigma^2}{64 n^2}\left(48\lambda_3^2 + 15\lambda_4^2 - 14\lambda_4 - 8\lambda_6 + 55\right) + o(n^{-2}),
 \end{aligned}
 $$
+{{< /math >}}
 
 and therefore $MSE(S_n) - MSE(\hat\sigma_n) = \dfrac{\sigma^2(\lambda_4 - 3)}{8n^2} + o(n^{-2})$. Here $MSE(T) = E[(T - \sigma)^2]$.
 
@@ -86,7 +88,7 @@ Expanding the sums and keeping only index patterns with no index occurring exact
 | $E [U_n^2 V_n^2]$ | all equal; $\lbrace i,j \rbrace, \lbrace k,l \rbrace$; two cross pairings | $(\lambda_4 - 1 + 2\lambda_3^2)/n^2 + O(n^{-3})$ |
 | $E U_n^4$ | all equal; two distinct pairs | $3(\lambda_4-1)^2/n^2 + O(n^{-3})$ |
 
-For example, $E[U_n^2V_n^2] = n^{-4}\big[\,n E[A^2Z^2] + n(n-1) E A^2\, E Z^2 + 2n(n-1)(E[AZ])^2\big]$. Each $O(n^{-3})$ term is an explicit constant over $n^3$, hence $o(n^{-2})$ [`sample_mean_moments`, `o_div_n3`].
+For example, $E[U_n^2V_n^2] = n^{-4}\big[\thinspace n E[A^2Z^2] + n(n-1) E A^2\thinspace  E Z^2 + 2n(n-1)(E[AZ])^2\big]$. Each $O(n^{-3})$ term is an explicit constant over $n^3$, hence $o(n^{-2})$ [`sample_mean_moments`, `o_div_n3`].
 
 ## 3. Moment growth bound (replaces any rate assumption)
 
@@ -99,7 +101,7 @@ $$
 *Proof.* $T_n$ is a function of $W_1, \ldots, W_n$, so it is independent of $W_{n+1}$ [Mathlib `iIndepFun.indepFun_finsetSum_of_notMem`]. Write $a_m(n) = E T_n^m$ and $M_l = E W^l$, so $M_0 = 1$ and $M_1 = 0$. The binomial theorem and independence give
 
 $$
-a_m(n+1) = E\big[(T_n + W_{n+1})^m\big] = \sum_{j=0}^m \binom{m}{j} a_j(n)\, M_{m-j}.
+a_m(n+1) = E\big[(T_n + W_{n+1})^m\big] = \sum_{j=0}^m \binom{m}{j} a_j(n)\thinspace  M_{m-j}.
 $$
 
 The $j = m$ term is $a_m(n)$, and the $j = m-1$ term vanishes because $M_1 = 0$. Hence
@@ -111,7 +113,7 @@ $$
 Induct on $m$. For $m = 0$, $a_0 \equiv 1$. Suppose the bound holds for all $j < m$, with $m \ge 1$, and let $q = \lfloor m/2 \rfloor$. For $j \le m-2$ we have $\lfloor j/2 \rfloor \le q - 1$, so the increment is at most $K (n+1)^{q-1}$ in absolute value, where $K = \max_{j<m} B_j \sum_{j \le m-2}\binom{m}{j}|M_{m-j}|$. For $m = 1$ the sum is empty and $K = 0$. Since $a_m(0) = 0$,
 
 $$
-|a_m(n)| \le K \sum_{t=0}^{n-1} (t+1)^{q-1} \le K\, n\, (n+1)^{q-1} \le K (n+1)^q. \qquad\blacksquare
+|a_m(n)| \le K \sum_{t=0}^{n-1} (t+1)^{q-1} \le K\thinspace  n\thinspace  (n+1)^{q-1} \le K (n+1)^q. \qquad\blacksquare
 $$
 
 **Consequence** [`rate_of_sum`, `remainder_order`]. Apply the lemma with $W_i = Z_i$ and with $W_i = A_i$. Since $U_n = T_n/n$ for $W = A$ and $V_n = T_n/n$ for $W = Z$, for $n \ge 1$
@@ -126,20 +128,23 @@ In particular $E U_n^8, E V_n^8 = O(n^{-4})$ and $E V_n^{16} = O(n^{-8})$. Since
 
 ## 4. Second order moments of $D_n$ and $\Delta_n$
 
-**Cauchy Schwarz** [`E_mul_sq_le`, `isBigO_E_mul`]. $(E[XY])^2 \le E X^2\, E Y^2$. So if $E X^2 = O(n^{-a})$ and $E Y^2 = O(n^{-b})$, then $E[XY] = O(n^{-(a+b)/2})$. With Step 3 this gives
+**Cauchy Schwarz** [`E_mul_sq_le`, `isBigO_E_mul`]. $(E[XY])^2 \le E X^2\thinspace  E Y^2$. So if $E X^2 = O(n^{-a})$ and $E Y^2 = O(n^{-b})$, then $E[XY] = O(n^{-(a+b)/2})$. With Step 3 this gives
 
+{{< math >}}
 $$
 \begin{aligned}
-|E[U V^4]| &\le (E U^2\, E V^8)^{1/2} = O(n^{-5/2}), & |E V^6| &\le (E V^4\, E V^8)^{1/2} = O(n^{-3}),\\
-|E[U^3 V^2]| &\le (E U^6\, E V^4)^{1/2} = O(n^{-5/2}), & E[U^2 V^4] &\le (E U^4\, E V^8)^{1/2} = O(n^{-3}),\\
-|E[U V^6]| &\le (E[U^2V^4]\, E V^8)^{1/2} = O(n^{-7/2}), & E V^8 &= O(n^{-4}),
+|E[U V^4]| &\le (E U^2\thinspace  E V^8)^{1/2} = O(n^{-5/2}), & |E V^6| &\le (E V^4\thinspace  E V^8)^{1/2} = O(n^{-3}),\\
+|E[U^3 V^2]| &\le (E U^6\thinspace  E V^4)^{1/2} = O(n^{-5/2}), & E[U^2 V^4] &\le (E U^4\thinspace  E V^8)^{1/2} = O(n^{-3}),\\
+|E[U V^6]| &\le (E[U^2V^4]\thinspace  E V^8)^{1/2} = O(n^{-7/2}), & E V^8 &= O(n^{-4}),
 \end{aligned}
 $$
+{{< /math >}}
 
 so all of these are $o(n^{-2})$.
 
 **Moments of $D_n$** [`derived_moments`]. Expanding powers of $D = U - V^2$ and using Step 2:
 
+{{< math >}}
 $$
 \begin{aligned}
 E D_n &= E U - E V^2 = -\tfrac1n,\\
@@ -148,6 +153,7 @@ E D_n^3 &= E U^3 - 3E[U^2V^2] + 3E[UV^4] - E V^6 = \tfrac{\lambda_6 - 6\lambda_4
 E D_n^4 &= E U^4 - 4E[U^3V^2] + 6E[U^2V^4] - 4E[UV^6] + E V^8 = \tfrac{3(\lambda_4 - 1)^2}{n^2} + o(n^{-2}).
 \end{aligned}
 $$
+{{< /math >}}
 
 **Moments of $\Delta_n$** [`derived_moments`]. Since $\Delta_n = (c_n - 1) + c_n D_n$, each $E\Delta_n^k$ is an exact combination of $E D_n^j$ with coefficients polynomial in $c_n$. For $n \ge 2$, $c_n - 1 = \frac1{n-1} = \frac{c_n}{n}$ and $c_n = 1 + O(1/n)$. This gives:
 
@@ -183,7 +189,7 @@ $$
 Taking expectations in the exact identity,
 
 $$
-E(1 + \delta_n) - E\,T_4(x_n) = \tfrac78 E\delta_n^5 + \tfrac78 E\delta_n^6 + \tfrac5{16}E\delta_n^7 + \tfrac5{128}E\delta_n^8 = o(n^{-2}).
+E(1 + \delta_n) - E\thinspace T_4(x_n) = \tfrac78 E\delta_n^5 + \tfrac78 E\delta_n^6 + \tfrac5{16}E\delta_n^7 + \tfrac5{128}E\delta_n^8 = o(n^{-2}).
 $$
 
 By Step 4, both $x_n = D_n$ (with $\delta_n = \sqrt{1+D_n}-1$) and $x_n = \Delta_n$ (with $\delta_n = \sqrt{1+\Delta_n}-1$) satisfy the hypotheses.
@@ -203,7 +209,7 @@ E\big[(\sigma(1+\delta) - \sigma)^2\big] = \sigma^2\big(E[1 + x] - 2E(1+\delta) 
 = \sigma^2\Big(\tfrac14 E x_n^2 - \tfrac18 E x_n^3 + \tfrac5{64}E x_n^4\Big) + o(n^{-2}),
 $$
 
-where the last step substitutes $E(1+\delta) = E\,T_4(x) + o(n^{-2})$.
+where the last step substitutes $E(1+\delta) = E\thinspace T_4(x) + o(n^{-2})$.
 
 ## 7. Assembling the four expansions
 
@@ -247,7 +253,7 @@ E(S_n) = \sigma - \frac{\sigma}{4n} - \frac{7\sigma}{32n^2} + o(n^{-2}),
 MSE(S_n),\ MSE(\hat\sigma_n) = \frac{\sigma^2}{2n} + \frac{7\sigma^2}{16n^2} + o(n^{-2}).
 $$
 
-As a check, $E(\hat\sigma_n) = \sqrt{\frac{n-1}{n}}\,E(S_n) = \sigma - \frac{3\sigma}{4n} - \frac{7\sigma}{32n^2} + o(n^{-2})$, which agrees with the general $E(\hat\sigma_n)$ formula at these values.
+As a check, $E(\hat\sigma_n) = \sqrt{\frac{n-1}{n}}\thinspace E(S_n) = \sigma - \frac{3\sigma}{4n} - \frac{7\sigma}{32n^2} + o(n^{-2})$, which agrees with the general $E(\hat\sigma_n)$ formula at these values.
 
 ## Remarks
 
