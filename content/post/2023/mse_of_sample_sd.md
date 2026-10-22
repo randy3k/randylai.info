@@ -26,7 +26,7 @@ where $R(x) =- \left(\frac{1}{8 \tilde \sigma^3} - \frac{1}{8 \sigma^3}\right)(x
 
 
 Let $\kappa = E(X - \mu)^4 / \sigma^4$ be the kurtosis.
-It could be shown that $E\left[\sqrt{n}(S_n^2 - \sigma^2)\right]^2 \rightarrow \sigma^4(\kappa-1)$ and $n ER(S_n^2) \rightarrow 0$ (and the proofs are beyond the discussion of this post. One could consider the fact that $\sqrt{n}(S_n^2 - \sigma^2)$  converges to $N(0, \sigma^4(\kappa-1))$).
+It could be shown that $E\left[\sqrt{n}(S_n^2 - \sigma^2)\right]^2 \rightarrow \sigma^4(\kappa-1)$ and $n ER(S_n^2) \rightarrow 0$ (and the proofs are beyond the discussion of this post).
 
 Thus,
 $$
