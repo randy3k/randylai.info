@@ -59,17 +59,6 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
-  goldmark:
-    extensions:
-      passthrough:
-        enable: true
-        delimiters:
-          block:
-            - ['$$', '$$']
-            - ['\[', '\]']
-          inline:
-            - ['$', '$']
-            - ['\(', '\)']
 related:
   threshold: 80
   includeNewer: true
