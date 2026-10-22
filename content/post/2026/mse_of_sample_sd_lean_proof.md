@@ -75,18 +75,16 @@ $$
 
 together with $E A^4 = \lambda_8 - 4\lambda_6 + 6\lambda_4 - 3$ [`E_A2`, `E_A3`, `E_AZ`, `E_AZ2`, `E_A2Z2`, `E_A4`].
 
-Expanding the sums and keeping only index patterns with no index occurring exactly once [`cov2_of_indep`, `cov3_of_indep`, `cov4_of_indep`, `sampleAvg_moment1` to `sampleAvg_moment4`]:
+Expanding the sums and keeping only index patterns with no index occurring exactly once gives the following, with the surviving patterns in parentheses [`cov2_of_indep`, `cov3_of_indep`, `cov4_of_indep`, `sampleAvg_moment1` to `sampleAvg_moment4`]:
 
-| Quantity | Surviving index patterns | Value |
-|---|---|---|
-| $E U_n$ | none | $0$ |
-| $E V_n^2$ | $i=j$ | $1/n$ |
-| $E U_n^2$ | $i=j$ | $(\lambda_4 - 1)/n$ |
-| $E U_n^3$ | $i=j=k$ | $(\lambda_6 - 3\lambda_4 + 2)/n^2$ |
-| $E [U_n V_n^2]$ | $i=j=k$ | $(\lambda_4 - 1)/n^2$ |
-| $E V_n^4$ | all equal; two distinct pairs | $3/n^2 + (\lambda_4 - 3)/n^3$ |
-| $E [U_n^2 V_n^2]$ | all equal; $\lbrace i,j \rbrace, \lbrace k,l \rbrace$; two cross pairings | $(\lambda_4 - 1 + 2\lambda_3^2)/n^2 + O(n^{-3})$ |
-| $E U_n^4$ | all equal; two distinct pairs | $3(\lambda_4-1)^2/n^2 + O(n^{-3})$ |
+* $E U_n = 0$ (no surviving pattern).
+* $E V_n^2 = 1/n$ (pattern $i=j$).
+* $E U_n^2 = (\lambda_4 - 1)/n$ (pattern $i=j$).
+* $E U_n^3 = (\lambda_6 - 3\lambda_4 + 2)/n^2$ (pattern $i=j=k$).
+* $E [U_n V_n^2] = (\lambda_4 - 1)/n^2$ (pattern $i=j=k$).
+* $E V_n^4 = 3/n^2 + (\lambda_4 - 3)/n^3$ (all four indices equal, or two distinct pairs).
+* $E [U_n^2 V_n^2] = (\lambda_4 - 1 + 2\lambda_3^2)/n^2 + O(n^{-3})$ (all equal, the pairs $i=j$ and $k=l$, or the two cross pairings).
+* $E U_n^4 = 3(\lambda_4-1)^2/n^2 + O(n^{-3})$ (all equal, or two distinct pairs).
 
 For example, $E[U_n^2V_n^2] = n^{-4}\big[\thinspace n E[A^2Z^2] + n(n-1) E A^2\thinspace  E Z^2 + 2n(n-1)(E[AZ])^2\big]$. Each $O(n^{-3})$ term is an explicit constant over $n^3$, hence $o(n^{-2})$ [`sample_mean_moments`, `o_div_n3`].
 
